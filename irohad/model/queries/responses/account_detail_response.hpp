@@ -15,23 +15,18 @@
  * limitations under the License.
  */
 
+#ifndef IROHA_ACCOUNT_DETAIL_RESPONSE_HPP
+#define IROHA_ACCOUNT_DETAIL_RESPONSE_HPP
 
-#ifndef IROHA_GET_ACCOUNT_DETAIL_HPP
-#define IROHA_GET_ACCOUNT_DETAIL_HPP
-
-#include <model/query.hpp>
-#include <string>
+#include <vector>
+#include "model/query_response.hpp"
 
 namespace iroha {
     namespace model {
-        /**
-         * Query for get all account's detail
-         */
-        struct GetAccountDetail : Query {
-            std::string account_id{};
-            std::string creator_account_id{};
+
+        struct AccountDetailResponse : public QueryResponse {
             std::string detail{};
         };
     }  // namespace model
 }  // namespace iroha
-#endif //IROHA_GET_ACCOUNT_DETAIL_HPP
+#endif //IROHA_ACCOUNT_DETAIL_RESPONSE_HPP
