@@ -118,7 +118,7 @@ TEST(QuerySerializerTest, DeserializeGetAccountDetailWhenValid) {
     "created_ts":0,
     "creator_account_id":"123",
     "query_counter":0,
-    "query_type":"GetAccountAssets",
+    "query_type":"GetAccountDetail",
     "account_id":"test@test",
     "detail":"key"
   })";
@@ -131,7 +131,7 @@ TEST(QuerySerializerTest, DeserializeGetAccountDetailWhenValid) {
 
 TEST(QuerySerializerTest, DeserializeWhenUnknownType) {
   JsonQueryFactory querySerializer;
-  auto json_query = R"({
+  auto json_query = R"(
     "signature":{
         "pubkey":"2323232323232323232323232323232323232323232323232323232323232323",
         "signature":"23232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323"
