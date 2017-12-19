@@ -108,6 +108,11 @@ TEST(QuerySerializerTest, DeserializeGetAccountAssetsWhenValid) {
   ASSERT_EQ("coin#test", casted->asset_id);
 }
 
+/**
+ * @given The json transaction that has valid and invalid hashes.
+ * @when Deserialize the json transaction.
+ * @then Validate the invalid hash is skipped and the only valid deserialized.
+ */
 TEST(QuerySerializerTest, DeserializeGetAccountDetailWhenValid) {
   JsonQueryFactory querySerializer;
   auto json_query = R"({

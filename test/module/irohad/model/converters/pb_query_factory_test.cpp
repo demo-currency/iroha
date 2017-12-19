@@ -76,6 +76,11 @@ TEST(PbQueryFactoryTest, SerializeGetAccountAssets){
   ASSERT_EQ(iroha::hash(*res_query.value()), iroha::hash(*query));
 }
 
+/**
+ * @given GetAccountDetail
+ * @when Set all data
+ * @then Return Protobuf Data
+ */
 TEST(PbQueryFactoryTest, SerializeGetAccountDetail){
   PbQueryFactory query_factory;
   QueryGenerator query_generator;

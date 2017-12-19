@@ -92,6 +92,11 @@ TEST(QueryResponseTest, AccountAsset) {
             des_account_asset.account_id);
 }
 
+/**
+ * @given AccountDetailResponse
+ * @when Set all data
+ * @then Return Protobuf Data
+ */
 TEST(QueryResponseTest, AccountDetailResponse) {
   model::converters::PbQueryResponseFactory pb_factory;
 
