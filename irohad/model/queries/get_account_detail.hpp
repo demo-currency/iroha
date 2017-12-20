@@ -15,7 +15,6 @@
  * limitations under the License.
  */
 
-
 #ifndef IROHA_GET_ACCOUNT_DETAIL_HPP
 #define IROHA_GET_ACCOUNT_DETAIL_HPP
 
