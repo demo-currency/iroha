@@ -1,0 +1,8 @@
+//
+// Created by TaiseiIgarashi on 2017/12/21.
+//
+
+#ifndef IROHA_PROTO_GET_ACCOUNT_DETAIL_HPP
+#define IROHA_PROTO_GET_ACCOUNT_DETAIL_HPP
+
+#endif //IROHA_PROTO_GET_ACCOUNT_DETAIL_HPP
