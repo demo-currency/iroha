@@ -58,7 +58,7 @@ if (NOT cpp_redis_FOUND)
 endif ()
 
 set_target_properties(cpp_redis PROPERTIES
-    INTERFACE_INCLUDE_DIRECTORIES ${cpp_redis_INCLUDE_DIR}
+    INTERFACE_INCLUDE_DIRECTORIES "${tacopie_SOURCE_DIR}/includes;${cpp_redis_INCLUDE_DIR}"
     IMPORTED_LOCATION ${cpp_redis_LIBRARY}
     INTERFACE_LINK_LIBRARIES "${tacopie_LIBRARY};pthread"
     )
