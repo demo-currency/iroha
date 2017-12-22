@@ -34,7 +34,9 @@ target_link_libraries(crypto_usage_test
     )
 
 AddTest(blob_test cryptography/blob_test.cpp)
-
+target_link_libraries(blob_test
+    boost
+    )
 AddTest(reference_holder_test
     reference_holder_test.cpp
     )
