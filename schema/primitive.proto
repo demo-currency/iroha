@@ -30,6 +30,8 @@ enum RolePermission {
     can_get_all_acc_txs = 22;
     can_get_my_acc_ast_txs = 23;
     can_get_all_acc_ast_txs = 24;
+    can_get_my_txs = 31;
+    can_get_all_txs = 32;
    // Grant permissions
     can_grant_add_signatory = 25;
     can_grant_remove_signatory = 26;
